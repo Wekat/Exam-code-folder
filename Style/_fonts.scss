@@ -2,7 +2,7 @@ $headingFont: 'Montserrat', sans-serif;
 $navFont: 'Source Sans Pro', sans-serif;
 $textFont: 'Open Sans', sans-serif;
 
-%nav {
+@mixin nav {
     font-family: $navFont;
     font-style: normal;
     font-weight: normal;
@@ -10,7 +10,7 @@ $textFont: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
 
-%heading1 {
+@mixin heading1 {
     font-family: $headingFont;
     font-style: normal;
     font-weight: bold;
@@ -19,7 +19,7 @@ $textFont: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
 
-%mainSlideText {
+@mixin mainSlideText {
     font-family: $headingFont;
     font-style: normal;
     font-weight: normal;
@@ -28,40 +28,62 @@ $textFont: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
 
-%heading2 {
+@mixin heading2 {
     font-family: $headingFont;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
+    line-height: 54px;
     text-align: center;
     color: #2C4058;
 }
 
-%cardHeading {
-    font-family: Montserrat;
+@mixin cardHeading {
+    font-family: $headingFont;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+    line-height: 27px;
     color: #2C4058;
 }
 
-%heading4 {
+@mixin articleAuthor {
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2C4058;
+}
+
+@mixin articleDate {
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #55B7FF;
+}
+
+@mixin heading4 {
     font-family: $headingFont;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
+    line-height: 27px;
     color: #2C4058;
 }
 
-%mainText {
+@mixin mainText {
     font-family: $textFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    line-height: 30px;
     color: #2C4058;
 }
 
-%picText {
+@mixin picText {
     font-family: $textFont;
     font-style: italic;
     font-weight: normal;

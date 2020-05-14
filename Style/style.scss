@@ -8,16 +8,16 @@ a {
 .section {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
-.main {
-    background: linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+.container {
+    width: 100%;
+    height: 100%;
 }
 
 .landing {
-    width: 100%;
-    height: 100%;
-    background-image: url(../Images/bg-landing-img.png);
+    background: url(../Images/bg-landing-img.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
     background-size: cover;
 }
 
@@ -45,8 +45,230 @@ a {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    
+    &--link {
+        @include nav;
+    }
 }
 
 .navDot {
-    margin-right: 14px;
+    margin-right: 10px;
 }
+
+.social {
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.firstSliderContainer {
+    width: 1000px;
+    height: 140px;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.slide1 {
+    text-align: center;
+}
+
+.h1 {
+    @include heading1;
+}
+
+.landingText {
+    @include mainSlideText;
+    margin-top: 20px;
+}
+
+.scrollArrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 30px); //should be 20px but it looks not centered?
+    background-image: url(../Images/Arrow.svg);
+    margin: auto;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid rgb(160, 172, 187);
+    margin: 100px auto 30px;
+
+    &.line2 {
+        border: 1px solid #FFFFFF;
+        margin: 0 auto 30px;
+    }
+}
+
+.h2 {
+    @include heading2;
+
+    &.pageHeading {
+        margin-bottom: 89px;
+    }
+
+    &.projectsHeading {
+        margin-bottom: 19px;
+        text-align: left;
+    }
+
+    &.h2News {
+        color: #FFFFFF;
+    }
+}
+
+.projects {
+    width: 86%; //1385px
+    height: 66%; //527px
+    display: flex;
+    align-items: flex-end;
+}
+
+.block-container {
+    width: 61%; //845px
+    height: 100%; //527px
+    position: relative;
+}
+
+.color-container {
+    width: 69%; //585px
+    height: 90%; //470px
+    background: #55B7FF;
+
+    &.color-container2 {
+        background: #7E5AFF;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.image-container {
+    width: 75%; //630px
+    height: 90%; //470px
+    overflow: hidden;
+    z-index: 20;
+
+    &.whiteBuilding {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.text-container {
+    width: 35%; //476px;
+    height: 66%; //351px;
+    margin-left: 5%;
+
+    &.text-container2 {
+        margin-left: 0;
+        margin-right: 5%;
+    }
+}
+
+.h4 {
+    @include heading4;
+}
+
+.text {
+    @include mainText;
+    margin-bottom: 7.7%;
+
+    &.slide2__content--text {
+        line-height: 25px;
+        margin-bottom: 39px;
+    }
+}
+
+.btn {
+    @include button;
+    margin-bottom: 11%;
+}
+
+.fa-map-marker-alt {
+    margin-right: 10px;
+}
+
+.picText {
+    @include picText;
+}
+
+.project2 {
+    position: absolute;
+    right: 0;
+    margin-top: calc(140px / 800px);
+}
+
+.darkbuilding {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sectionNews {
+    width: 100%;
+    height: 1035px;
+}
+
+.news {
+    background: url(../Images/bg-news-img.png) bottom no-repeat, linear-gradient(225deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    padding-top: 13%;
+}
+
+.secondSliderContainer {
+    width: 1170px;
+    height: 517px;
+    margin-top: 8.6%;
+}
+
+.slide2 {
+    width: 370px;
+    height: 100%;
+    background: #FFFFFF;
+    margin: 0px 15px;
+}
+
+.slide2__img {
+    width: 100%;
+    height: 240px;
+}
+
+.slide2__content {
+    padding: 30px 20px;
+}
+
+.slide2__content--heading, .h3 {
+    @include cardHeading;
+    margin-bottom: 15px;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__pic {
+        width: 60px;
+        height: 60px;
+        background-image: url(../Images/author1.png);
+        background-size: contain;
+        margin-right: 20px;
+    }
+
+    &__info--name {
+        @include articleAuthor;
+    }
+
+    &__info--date {
+        @include articleDate;
+    }
+}
+
