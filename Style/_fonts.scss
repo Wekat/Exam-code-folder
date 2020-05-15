@@ -90,3 +90,21 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #000000;
 }
+
+@mixin copyRight {
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+}
+
+@mixin contactText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
