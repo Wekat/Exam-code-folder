@@ -1,3 +1,5 @@
+//First slider
+
 $(document).ready(function(){
     $('.firstSlider').slick({
       dots: true, //remember to costomize the dots

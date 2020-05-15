@@ -43,7 +43,7 @@ a {
     width: 515px;
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
     &--link {
         @include nav;
@@ -52,6 +52,19 @@ a {
 
 .navDot {
     margin-right: 10px;
+    display: inline;
+}
+
+.empty {
+    width: 9px;
+    height: 9px;
+    background-image: url(../Images/dotEmpty.svg);
+}
+
+.filled {
+    width: 9px;
+    height: 9px;
+    background-image: url(../Images/dotFilled.svg);
 }
 
 .social {
@@ -60,10 +73,21 @@ a {
     justify-content: space-evenly;
 }
 
+.soMeIcon:hover {
+    fill: red;
+    stroke: red;
+}
+
 .firstSliderContainer {
-    width: 1000px;
+    width: 917px;
     height: 140px;
     margin: 223px auto;
+    position: relative;
+}
+
+.slick-dots {
+    transform: rotate(90deg);
+    right: 280px;
 }
 
 .slide1 {
@@ -368,7 +392,7 @@ a {
 .card {
     width: 770px;
     height: 450px;
-    background: #FFFFFF;
+    background: url(../Images/cardBg.png) bottom no-repeat, #FFFFFF; //size is wrong!!
     box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
     position: absolute;
     bottom: -150px;
@@ -431,8 +455,6 @@ a {
     width: 100%;
     height: 549px;
     background: url(../Images/footerBg.png) top no-repeat, linear-gradient(225deg, #7E5AFF -2.19%, #55B7FF 103.21%);
-    position: relative;
-    z-index: 1;
 }
 
 .footerContent {
