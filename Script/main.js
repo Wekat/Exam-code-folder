@@ -1,10 +1,4 @@
-//hover effect on menu items
-// $('.menu__list--link').hover (function () {
-//     let dot = $('.navDot');
-//     dot.css({
-//         background: #FFFFFF,
-//     });
-// });
+
 
 
 

@@ -71,6 +71,10 @@ a {
           align-items: center;
 }
 
+.menu__list--link:hover .navDot {
+  background-color: #FFFFFF;
+}
+
 .navDot {
   margin-right: 10px;
   width: 9px;

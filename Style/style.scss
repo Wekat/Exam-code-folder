@@ -53,6 +53,10 @@ a {
         @include nav;
         display: flex;
         align-items: center;
+
+        &:hover .navDot {
+            background-color: #FFFFFF;
+        }
     }
 }
 
