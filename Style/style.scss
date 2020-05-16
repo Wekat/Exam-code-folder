@@ -47,24 +47,27 @@ a {
     
     &--link {
         @include nav;
+        display: flex;
+        align-items: center;
     }
 }
 
 .navDot {
     margin-right: 10px;
-    display: inline;
 }
 
 .empty {
     width: 9px;
     height: 9px;
-    background-image: url(../Images/dotEmpty.svg);
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 .filled {
     width: 9px;
     height: 9px;
-    background-image: url(../Images/dotFilled.svg);
+    background: #FFFFFF;
+    border-radius: 50%;
 }
 
 .social {
