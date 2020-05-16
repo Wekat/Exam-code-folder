@@ -22,12 +22,12 @@
             <header class="navigation">
                 <div class="logo"></div>
                 <nav class="menu">
-                        <!--java script för smooth scroll and hover effect change empty dot to filled dot-->
+                        <!--smooth scroll to sections-->
                     <ul class="menu__list">
-                        <a id="menuLink" class="menu__list--link" href=""><div class="navDot empty"></div><li>ABOUT US</li></a>
-                        <a id="menuLink" class="menu__list--link" href=""><div class="navDot empty"></div><li>PROJECTS</li></a>
-                        <a id="menuLink" class="menu__list--link" href=""><div class="navDot empty"></div><li>NEWS</li></a>
-                        <a id="menuLink" class="menu__list--link" href=""><div class="navDot empty"></div><li>CONTACT</li></a>
+                        <a class="menu__list--link" href="#"><div class="navDot"></div><li>ABOUT US</li></a>
+                        <a class="menu__list--link" href="#projects"><div class="navDot"></div><li>PROJECTS</li></a>
+                        <a class="menu__list--link" href="#news"><div class="navDot"></div><li>NEWS</li></a>
+                        <a class="menu__list--link" href="#contact"><div class="navDot"></div><li>CONTACT</li></a>
                     </ul>
                 </nav>
                 <div class="social">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <!--Smooth scroll to Projects when clicking the arrow icon in the first section-->
-            <a href=""><div class="scrollArrow"></div></a>
+            <a class="smoothScroll" href="#projects"><div class="scrollArrow"></div></a>
         </div>
     </section>
     <section class="section" id="projects">

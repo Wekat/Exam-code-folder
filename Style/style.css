@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -69,19 +73,9 @@ a {
 
 .navDot {
   margin-right: 10px;
-}
-
-.empty {
   width: 9px;
   height: 9px;
   border: 1px solid #FFFFFF;
-  border-radius: 50%;
-}
-
-.filled {
-  width: 9px;
-  height: 9px;
-  background: #FFFFFF;
   border-radius: 50%;
 }
 

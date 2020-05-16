@@ -1,6 +1,10 @@
 @import "fonts";
 @import "buttons";
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -54,19 +58,9 @@ a {
 
 .navDot {
     margin-right: 10px;
-}
-
-.empty {
     width: 9px;
     height: 9px;
     border: 1px solid #FFFFFF;
-    border-radius: 50%;
-}
-
-.filled {
-    width: 9px;
-    height: 9px;
-    background: #FFFFFF;
     border-radius: 50%;
 }
 
@@ -215,6 +209,10 @@ opacity: 0.75;
     background-image: url(../Images/Arrow.svg);
     margin: auto;
 }
+
+// .smoothScroll {
+//     scroll-behavior: smooth;
+// }
 
 .line {
     width: 100px;

@@ -1,5 +1,10 @@
 //hover effect on menu items
-
+// $('.menu__list--link').hover (function () {
+//     let dot = $('.navDot');
+//     dot.css({
+//         background: #FFFFFF,
+//     });
+// });
 
 
 
@@ -19,8 +24,6 @@ $('.newsSlider').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
-    // prevArrow: '<div class="slick-prev"></div>',
-    // nextArrow: '<div class="slick-next"></div>',
   });
 });
 
