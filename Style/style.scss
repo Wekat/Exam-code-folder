@@ -76,9 +76,21 @@ a {
     justify-content: space-evenly;
 }
 
+.soMeIcon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFFFFF;;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
 .soMeIcon:hover {
-    fill: red;
-    stroke: red;
+    opacity: 0.6;
 }
 
 .firstSliderContainer {
@@ -88,9 +100,97 @@ a {
     position: relative;
 }
 
-.slick-dots {
-    transform: rotate(90deg);
+.firstSlider{
+    display: flex;
+}
+
+.verticalDots {
+    position: absolute;
+    right: -280px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210px;
+    width: 10px;
+}
+  
+.verticalDots li {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+}
+  
+.verticalDots li button {
+    border: 0;
+    background: transparent;
+    display: block;
+    height: 10px;
+    width: 10px;
+    outline: none;
+    line-height: 0px;
+    font-size: 0px;
+    color: transparent;
+    cursor: pointer;
+}
+  
+.verticalDots li button:hover, .verticalDots li button:focus {
+outline: none;
+}
+  
+.verticalDots li button:hover:before, .verticalDots li button:focus:before {
+opacity: 1;
+}
+  
+.verticalDots li button:before {
+position: absolute;
+top: 0;
+left: 0;
+width: 10px;
+height: 10px;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 50%;
+bottom: -60px;
+opacity: 1;
+content: "";
+}
+
+.verticalDots li.slick-active button:before {
+color: black;
+opacity: 0.75;
+}
+
+.vericalDots {
+    
+    position: absolute;
     right: 280px;
+}
+
+.verticalDots li.slick-active button:before {
+    background: #FFFFFF;
+    border: none;
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    bottom: -60px;
+    opacity: 1;
+    content: "";
+}
+
+.slick-dots li.slick-active button:before {
+    background: #FFFFFF;
+    border: none;
+    opacity: 1;
 }
 
 .slide1 {
@@ -263,7 +363,7 @@ a {
 }
 
 .secondSliderContainer {
-    width: 1170px;
+    width: 1370px;;
     height: 517px;
     margin: 89px auto;
 }

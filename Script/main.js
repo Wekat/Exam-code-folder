@@ -1,20 +1,26 @@
-//First slider
+//hover effect on menu items
 
+
+
+
+//First slider
 $(document).ready(function(){
     $('.firstSlider').slick({
-      dots: true, //remember to costomize the dots
       arrows: false,
+      dots: true,
+      dotsClass: 'verticalDots'
     });
 });
 
+//second slider
 $(document).ready(function(){
 $('.newsSlider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
-    prevArrow: '<div class="slick-prev"></div>',
-    nextArrow: '<div class="slick-next"></div>',
+    // prevArrow: '<div class="slick-prev"></div>',
+    // nextArrow: '<div class="slick-next"></div>',
   });
 });
 
