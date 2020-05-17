@@ -257,15 +257,20 @@ function initMap() {
 // submitting the form
 
 let submitBtn = $('.contact__form--btn');
-let input = $('contact__form--input').val;
+let name = $('#name').val;
+let email = $('#email').val;
 
-$(".contact__form").submit(function(){
-    if (input == true) {
+$(".contact__form").submit(function(event){
+    if (name != 0 && email != 0) {
         $('.contact__form').hide();
         $('.contactMessage').show();
+        $('.contactMessage').focus();
+
     } else {
         alert('Please make sure both name and e-mail is correctly inserted')
     }
+    // Prevent form submission which refreshes page
+    event.preventDefault();
 });
 
 // submitBtn.on('click', () => {
