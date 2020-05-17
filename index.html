@@ -105,10 +105,7 @@
         <div class="containerNews">
             <div class="line line2"></div>
             <h2 class="h2 h2News">LATEST NEWS</h2>
-                <!--Av någon anledning så ändrar den storlek på mina slide2 när jag sätter margin mellan
-                dots ska vara customized och placerad rätt i förhållande till slidern
-                hitta på några slide2 till så det blir fler
-                Automatic scroll with 4-sec delay.-->
+                <!--Automatic scroll with 4-sec delay only one at thr time.-->
             <div class="secondSliderContainer">
                 <div class="newsSlider">
                     <div class="slide2">
@@ -159,10 +156,24 @@
                             <h3 class="slide2__content--heading h3">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
                             <p class="slide2__content--text text">Free directories: directories are perfect for customers that are searching for...</p>
                             <div class="author">
-                                <div class="author__pic"></div>
+                                <div class="author__pic"><img src="Images/author1.png" alt=""></div>
                                 <div class="author__info">
                                     <p class="author__info--name">ALJA BRUN</p>
                                     <p class="author__info--date">20 Jan 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="slide2__img"><img src="Images/articlePic2.png" alt=""></div>
+                        <div class="slide2__content">
+                            <h3 class="slide2__content--heading h3">EFFECTIVE ADVERTISING POINTERS.</h3>
+                            <p class="slide2__content--text text">Having a home based business is a wonderful asset to your life...</p>
+                            <div class="author">
+                                <div class="author__pic"><img src="Images/author2.png" alt=""></div>
+                                <div class="author__info">
+                                    <p class="author__info--name">DOMINIC FREEMAN</p>
+                                    <p class="author__info--date">13 Dec 2019</p>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +187,7 @@
             <div class="line"></div> <!--Line between sections-->
             <h2 class="h2 pageHeading">GALLERY</h2>
             <div class="grid-container">
-                <img class="gridImg1" src="Images/grid1.png" alt="">
+                <a href=""><img class="gridImg1" src="Images/grid1.png" alt=""></a>
                 <img class="gridImg2" src="Images/grid2.png" alt="">
                 <img class="gridImg3" src="Images/grid3.png" alt="">
                 <img class="gridImg4" src="Images/grid4.png" alt="">
@@ -191,7 +202,6 @@
             <div class="card">
                 <div class="line"></div> <!--Line between sections-->
                 <h2 class="h2">GET IN TOUCH</h2>
-                <!--contact form needs to be on top of footer as well-->
                 <div class="contact">
                     <div class="contact__info">
                         <p><span class="contact__info--icon"><i class="fas fa-map-marker-alt"></i></span> Nolan Extensions Suite 670</p>
@@ -208,23 +218,26 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="footer section">
-        <div class="containerFooter">
-            <div class="footerContent">
-                <div class="footerContent__left">
-                    <div class="logo"></div>
-                    <p class="copyRight">Copyrights © 2020 Montichello</p>
-                </div>
-                    <!--add hover effect on soMe icons when done copy everything down to footer as well-->
-                <div class="social">
-                    <a class="social--link" href="https://www.facebook.com/"><div class="soMeIcon"><i class="fab fa-facebook-f"></i></div></a>
-                    <a class="social--link" href="https://twitter.com/explore"><div class="soMeIcon"><i class="fab fa-twitter"></i></div></a>
-                    <a class="social--link" href="https://www.instagram.com/"><div class="soMeIcon"><i class="fab fa-instagram"></i></div></a>
+            <!--did not manage to get the footer under the contact form without placing it inside the same section
+            it is not good looking but how much I tried with z-index it did not work-->
+        <footer class="footer section">
+            <div class="containerFooter">
+                <div class="footerContent">
+                    <div class="footerContent__left">
+                        <div class="logo"></div>
+                        <p class="copyRight">Copyrights © 2020 Montichello</p>
+                    </div>
+                        <!--add hover effect on soMe icons when done copy everything down to footer as well-->
+                    <div class="social">
+                        <a class="social--link" href="https://www.facebook.com/"><div class="soMeIcon"><i class="fab fa-facebook-f"></i></div></a>
+                        <a class="social--link" href="https://twitter.com/explore"><div class="soMeIcon"><i class="fab fa-twitter"></i></div></a>
+                        <a class="social--link" href="https://www.instagram.com/"><div class="soMeIcon"><i class="fab fa-instagram"></i></div></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
+    
 
 
 

@@ -6,9 +6,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
 .section {
   width: 100vw;
-  min-width: 1600px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -22,8 +28,7 @@ a {
 }
 
 .navigation {
-  max-width: 73.1%;
-  min-width: 1000px;
+  width: 1170px;
   height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +123,7 @@ a {
 }
 
 .firstSliderContainer {
-  width: 917px;
+  width: 100%;
   height: 140px;
   margin: 223px auto;
   position: relative;
@@ -128,11 +133,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
 }
 
 .verticalDots {
   position: absolute;
-  right: -280px;
+  right: 52px;
   list-style: none;
   display: block;
   text-align: center;
@@ -272,7 +281,7 @@ a {
 }
 
 .containerProjects {
-  width: 100%;
+  width: 1600px;
   height: 1367px;
   margin-top: 100px;
   margin-bottom: 140px;
@@ -301,19 +310,24 @@ a {
   color: #FFFFFF;
 }
 
+.projectWrapper {
+  width: 100%;
+  margin-bottom: 140px;
+}
+
 .projects {
   width: 1385px;
   height: 527px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 140px;
 }
 
 .projects.project1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 140px;
 }
 
 .projects.project2 {
@@ -397,6 +411,8 @@ a {
 }
 
 .btn {
+  width: 192px;
+  height: 50px;
   border: 1px solid #2C4058;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -410,9 +426,15 @@ a {
   margin-bottom: 11%;
 }
 
+.btn:hover {
+  background-color: #7E5AFF;
+  color: white;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .btn.galleryBtn {
-  width: 190px;
-  height: 50px;
   margin: 60px auto;
 }
 
@@ -439,6 +461,8 @@ a {
   height: 1035px;
   background: url(../Images/bg-news-img.png) bottom no-repeat, linear-gradient(225deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   padding-top: 135px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .secondSliderContainer {
@@ -447,8 +471,14 @@ a {
   margin: 89px auto;
 }
 
+.newsSlider {
+  position: relative;
+}
+
 .slick-prev {
   left: -80px !important;
+  width: 0;
+  height: 0;
 }
 
 .slick-prev::before {
@@ -462,7 +492,9 @@ a {
 }
 
 .slick-next {
-  right: -80px !important;
+  right: -45px !important;
+  width: 0;
+  height: 0;
 }
 
 .slick-next::before {
@@ -477,6 +509,12 @@ a {
 
 .slick-dots {
   bottom: -70px !important;
+}
+
+.slick-dots li {
+  width: 0;
+  height: 0;
+  margin: 0 25px;
 }
 
 .slide2 {
@@ -637,6 +675,8 @@ a {
   position: absolute;
   bottom: -150px;
   padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 50 !important;
 }
 
@@ -698,6 +738,15 @@ a {
   opacity: 0.2;
   border: none;
   border-bottom: 1px solid #2C4058;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  line-height: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contact__form--input::-webkit-input-placeholder {
@@ -743,9 +792,11 @@ a {
 .contact__form--input:focus {
   color: #000000;
   border-bottom: 1px solid #2C4058;
+  background: none;
+  opacity: 1;
 }
 
-.contact--btn {
+.contact__form--btn {
   border: 1px solid #2C4058;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -756,6 +807,16 @@ a {
   color: #000000;
   padding: 16px 41px 17px 41px;
   background: none;
+  width: 140px;
+  height: 50px;
+}
+
+.contact__form--btn:hover {
+  background-color: #7E5AFF;
+  color: white;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .containerFooter {

@@ -16,8 +16,10 @@ $(document).ready(function(){
 $('.newsSlider').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
   });
 });
 
