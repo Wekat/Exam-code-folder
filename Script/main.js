@@ -1,7 +1,4 @@
 
-
-
-
 //First slider
 $(document).ready(function(){
     $('.firstSlider').slick({
@@ -256,3 +253,27 @@ function initMap() {
         icon: '../Images/Pin.svg',
     });
 }
+
+// submitting the form
+
+let submitBtn = $('.contact__form--btn');
+let input = $('contact__form--input').val;
+
+$(".contact__form").submit(function(){
+    if (input == true) {
+        $('.contact__form').hide();
+        $('.contactMessage').show();
+    } else {
+        alert('Please make sure both name and e-mail is correctly inserted')
+    }
+});
+
+// submitBtn.on('click', () => {
+//     console.log(input);
+//     if (input == true) {
+//         $('.contact__form').hide();
+//         $('.contactMessage').show();
+//     } else {
+//         alert('Please make sure both name and e-mail is correctly inserted')
+//     }
+// });

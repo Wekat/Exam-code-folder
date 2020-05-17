@@ -187,11 +187,41 @@
             <div class="line"></div> <!--Line between sections-->
             <h2 class="h2 pageHeading">GALLERY</h2>
             <div class="grid-container">
-                <a href=""><img class="gridImg1" src="Images/grid1.png" alt=""></a>
-                <img class="gridImg2" src="Images/grid2.png" alt="">
-                <img class="gridImg3" src="Images/grid3.png" alt="">
-                <img class="gridImg4" src="Images/grid4.png" alt="">
-                <img class="gridImg5" src="Images/grid5.png" alt="">
+                <a class="gridImg1 imgContainer" href="">
+                    <img class="image" src="Images/grid1.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <img src="Images/360.svg" alt="">
+                    </div>
+                </a>
+                <a class="gridImg2 imgContainer" href="">
+                    <img src="Images/grid2.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <img src="Images/360.svg" alt="">
+                    </div>
+                </a>
+                <a class="gridImg3 imgContainer" href="">
+                    <img src="Images/grid3.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <img src="Images/360.svg" alt="">
+                    </div>
+                </a>
+                <a class="gridImg4 imgContainer" href="">
+                    <img src="Images/grid4.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <img src="Images/360.svg" alt="">
+                    </div>
+                </a>
+                <a class="gridImg5 imgContainer" href="">
+                    <img src="Images/grid5.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <img src="Images/360.svg" alt="">
+                    </div>
+                </a>
             </div>
             <button class="btn galleryBtn">SEE MORE</button>
         </div>
@@ -210,10 +240,14 @@
                         <p><span class="contact__info--icon"><i class="far fa-clock"></i></span> From 07:05AM to 19:30PM</p>
                     </div>
                         <!--form needs to have form validation and a javascript method that changes the name and email to a message when submitted-->
-                    <div class="contact__form">
-                        <input class="contact__form--input" id="name" type="text" placeholder="Name">
-                        <input class="contact__form--input" id="email" type="email" placeholder="Email">
+                    <form class="contact__form">
+                        <input class="contact__form--input" id="name" type="text" placeholder="Name" required>
+                        <input class="contact__form--input" id="email" type="email" placeholder="Email" required>
                         <button class="contact__form--btn" type="submit">SUMBIT</button>
+                        <!--what comes up when contact form is submitted-->
+                    </form>
+                    <div class="contactMessage">
+                        <p>We will soon be in touch with you!</p>
                     </div>
                 </div>
             </div>
