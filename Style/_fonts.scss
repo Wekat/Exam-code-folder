@@ -15,8 +15,10 @@ $textFont: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 80px;
-    letter-spacing: 0.1em;
+    letter-spacing: 6px;
     color: #FFFFFF;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 @mixin mainSlideText {
