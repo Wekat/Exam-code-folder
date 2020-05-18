@@ -260,7 +260,8 @@ opacity: 0.75;
 }
 
 .projects {
-    width: 1385px; //1385px/1600px
+    max-width: 1385px; //1385px/1600px
+    width: 86.5%;
     height: 527px; //527px/1367px
     display: flex;
     margin-bottom: 140px;
@@ -277,13 +278,13 @@ opacity: 0.75;
 }
 
 .block-container {
-    width: 845px; //845/1385 61%
+    width: 61%; //845/1385 61%
     height: 100%;
     position: relative;
 }
 
 .color-container {
-    width: 585px; //585px; 69%
+    width: 69%; //585px; 69%
     height: 470px; //470px; 90%
     background: #55B7FF;
 

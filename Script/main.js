@@ -272,13 +272,3 @@ $(".contact__form").submit(function(event){
     // Prevent form submission which refreshes page
     event.preventDefault();
 });
-
-// submitBtn.on('click', () => {
-//     console.log(input);
-//     if (input == true) {
-//         $('.contact__form').hide();
-//         $('.contactMessage').show();
-//     } else {
-//         alert('Please make sure both name and e-mail is correctly inserted')
-//     }
-// });
