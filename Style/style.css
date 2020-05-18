@@ -334,8 +334,8 @@ p {
 }
 
 .block-container {
-  width: 845px;
-  height: 527px;
+  width: 61%;
+  height: 100%;
   position: relative;
 }
 
@@ -784,10 +784,12 @@ p {
   font-size: 18px;
   color: #000000;
   line-height: 0;
-  padding: 0;
+  padding-top: -20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: none;
+  outline: none;
+  padding-bottom: 17px;
 }
 
 .contact__form--input::-webkit-input-placeholder {
