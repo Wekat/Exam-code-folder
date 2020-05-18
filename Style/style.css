@@ -281,6 +281,10 @@ p {
   background-image: url(../Images/Arrow.svg);
 }
 
+.scrollArrow:hover {
+  opacity: 0.4;
+}
+
 .line {
   width: 100px;
   border: 1px solid #a0acbb;
