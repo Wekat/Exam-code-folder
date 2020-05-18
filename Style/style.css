@@ -17,7 +17,6 @@ p {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  z-index: 1;
 }
 
 .containerLanding {
@@ -461,7 +460,7 @@ p {
 }
 
 .secondSliderContainer {
-  width: 1200px;
+  max-width: 1200px;
   height: 517px;
   margin: 89px auto;
 }
