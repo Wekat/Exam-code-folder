@@ -14,7 +14,7 @@ p {
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -389,14 +389,22 @@ p {
 
 .text-container {
   width: 479px;
-  height: 351px;
+  height: 100%;
   margin-left: 5%;
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .text-container.text-container2 {
   margin-left: 0;
   margin-right: 70px;
+}
+
+.text-wrapper {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .h4 {

@@ -15,7 +15,7 @@ p {
 }
 
 .section {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -316,14 +316,19 @@ opacity: 0.75;
 
 .text-container {
     width: 479px; //476px 35%;
-    height: 351px; //351px; 66%
+    height: 100%; //351px; 66%
     margin-left: 5%;
     margin-bottom: 25px;
+    display: flex;
 
     &.text-container2 {
         margin-left: 0;
         margin-right: 70px;
     }
+}
+
+.text-wrapper {
+    align-self: flex-end;
 }
 
 .h4 {
