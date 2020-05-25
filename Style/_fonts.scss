@@ -51,7 +51,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 22px;
     line-height: 27px;
     color: #2C4058;
-    font-display: swap;
 }
 
 @mixin articleAuthor {
@@ -61,7 +60,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 22px;
     color: #2C4058;
-    font-display: swap;
 }
 
 @mixin articleDate {
@@ -71,7 +69,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: #55B7FF;
-    font-display: swap;
 }
 
 @mixin heading4 {
@@ -81,7 +78,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 22px;
     line-height: 27px;
     color: #2C4058;
-    font-display: swap;
 }
 
 @mixin mainText {
@@ -91,7 +87,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #2C4058;
-    font-display: swap;
 }
 
 @mixin picText {
@@ -100,7 +95,6 @@ $textFont: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 15px;
     color: #000000;
-    font-display: swap;
 }
 
 @mixin copyRight {
@@ -110,7 +104,6 @@ $textFont: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    font-display: swap;
 
 }
 
@@ -120,5 +113,4 @@ $textFont: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 18px;
     color: #000000;
-    font-display: swap;
 }
